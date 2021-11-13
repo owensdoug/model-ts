@@ -1,6 +1,6 @@
 {
   "name": "@owensdoug/model-ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "initialize": "npm install && npm run build",
     "configure-git": "npm run configure-git-user-email && npm run config-git-user-name",
