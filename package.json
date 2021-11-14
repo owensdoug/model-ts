@@ -3,9 +3,6 @@
   "version": "0.0.5",
   "scripts": {
     "initialize": "npm install && npm run build",
-    "configure-git": "npm run configure-git-user-email && npm run config-git-user-name",
-    "configure-git-user-email": "git configure --global user.email",
-    "configure-git-user-name": "git configure --global user.name",
     "remove-git-tags-local": "git tag -d $(git tag -l)",
     "version": "npm run beautify && npm run test && npm run git-add",
     "commit": "git commit",

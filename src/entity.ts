@@ -13,4 +13,10 @@ export interface Entity
   id: string | number;
 }
 
-export abstract class Entity implements Entity {}
+export abstract class Entity implements Entity {
+  readonly _id: number;
+
+  constructor(id: number) {
+    this._id = id;
+  }
+}
