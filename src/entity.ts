@@ -10,14 +10,14 @@ export interface Entity<T>
     Auditable,
     Archivable,
     Deletable {
-  id: string | number;
+  id: string;
   isEqualTo(other: Entity<T>);
 }
 
 export abstract class Entity<T> implements Entity<T> {
-  readonly _id: number;
+  readonly _id: string;
 
-  constructor(id: number) {
+  constructor(id: string) {
     this._id = id;
   }
 
